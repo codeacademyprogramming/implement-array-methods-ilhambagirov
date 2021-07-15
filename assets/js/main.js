@@ -1,3 +1,13 @@
+function entry(firsttext="Please enter a number",secondtext="Please enter b number",thirdtext="Please enter c number"){
+    let a=prompt(firsttext);
+    let b=prompt(secondtext);
+    let c=prompt(thirdtext);
+    let sum = Number(a)+Number(b)+Number(c);
+    return sum;
+}
+
+alert(entry());
+
 // function myFunc (a) {
 //     console.log(a);
 // }
@@ -79,46 +89,46 @@
 
 
 
-function multiplyNumbersInArrayByThree (array) {
-    const result = [];
-    for (let i = 0; i < array.length; i++) {
-        result.push(array[i] * 3);
-    }
-    return result;
-}
+// function multiplyNumbersInArrayByThree (array) {
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         result.push(array[i] * 3);
+//     }
+//     return result;
+// }
 
-const numbers = [1,2,3,4,5,6,7,8,9,10];
-// console.log(multiplyNumbersInArrayByThree(numbers));
+// const numbers = [1,2,3,4,5,6,7,8,9,10];
+// // console.log(multiplyNumbersInArrayByThree(numbers));
 
-function multiplyNumbersInArrayByFive (array) {
-    const result = [];
-    for (let i = 0; i < array.length; i++) {
-        result.push(array[i] * 5);
-    }
-    return result;
-}
+// function multiplyNumbersInArrayByFive (array) {
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         result.push(array[i] * 5);
+//     }
+//     return result;
+// }
 
-// console.log(multiplyNumbersInArrayByFive(numbers));
+// // console.log(multiplyNumbersInArrayByFive(numbers));
 
 
 
-const multiplyByTwo = (a) => a * 2;
-const multiplyByFive = (a) => a * 5;
+// const multiplyByTwo = (a) => a * 2;
+// const multiplyByFive = (a) => a * 5;
 
-loopAndModifyElementsInArray(numbers, multiplyByTwo);
-loopAndModifyElementsInArray(numbers, multiplyByFive);
-loopAndModifyElementsInArray(numbers, function (d) {
-    return d * 100
-});
-loopAndModifyElementsInArray(numbers, (e) => e / 2);
+// loopAndModifyElementsInArray(numbers, multiplyByTwo);
+// loopAndModifyElementsInArray(numbers, multiplyByFive);
+// loopAndModifyElementsInArray(numbers, function (d) {
+//     return d * 100
+// });
+// loopAndModifyElementsInArray(numbers, (e) => e / 2);
 
-function loopAndModifyElementsInArray (array, cb) {
-    const result = [];
-    for (let i = 0; i < array.length; i++) {
-        result.push(cb(array[i]));
-    }
-    return result;
-}
+// function loopAndModifyElementsInArray (array, cb) {
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//         result.push(cb(array[i]));
+//     }
+//     return result;
+// }
 
 
 
